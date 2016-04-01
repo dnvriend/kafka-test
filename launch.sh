@@ -11,5 +11,5 @@ export IP_VM_DEV=$(docker-machine ip dev)
 check_for_kafka_image
 docker rm -f $(docker ps -aq)
 docker-compose build --no-cache
-docker-compose --x-networking up -d
+docker-compose up -d
 echo "Launching Kafka..."
